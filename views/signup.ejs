@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	body{
+	margin-top:50px;
+	background-color: rgb(202, 243, 216);
+}
+.card{
+  width:500px;
+	height:auto;
+	position:fixed;
+	top:75px;
+	left:440px;
+	padding:10px;
+    background-color:rgb(25, 51, 53);
+}
+.card-header{
+    font-family: Rockwell;
+    color: beige;
+    font-size: 20px;
+}
+.autocenter{
+	float:none;
+	margin:auto;
+}
+button {
+    background-color:rgb(179, 214, 248);  ;
+    font-family: Rockwell;
+    color: beige;
+
+}
+label{
+  font-family: Rockwell;
+    color: beige;
+    font-size: 12px;
+}
+img{
+  width:60px;
+  height:60px;
+  position:fixed;
+  left:580px;
+  top:10px
+}
+.img{
+  font-family: Rockwell;
+  font-size: 50px;
+  color:rgb(17, 1, 54);
+  position:fixed;
+  left:650px;
+  top:0px;
+}
+</style>
+</head>
+<body>
+    <%if(responseMessage!=""){%>
+        <%if(responseMessage=="Success"){%>
+        <div class="modal" id="successModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Success</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            User Registered Successfully! Please Login!
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+        $("#successModal").modal();
+    </script>
+    <%}%>
+    <%if(responseMessage=="Exist"){%>
+        <div class="modal" id="existModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Exists</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            User Already Exists! Please Login! or Try again!
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+        $("#existModal").modal();
+    </script>
+    <%}%>
+    <%if(responseMessage=="passnotmatch"){%>
+        <div class="modal" id="notmatchModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Pasword Do Not Match</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            New Password and Confirm Password Does Not Match! Try Again!
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+        $("#notmatchModal").modal();
+    </script>
+    <%}%>
+    <%}%>
+<button style="border: none; outline: none;" onclick="location.assign('/')"><i class="fa fa-home" style="font-size: 50px;color:rgb(17, 1, 54);position:fixed;left:20px;top:20px"></i></button>
+<img src="icon1.png">
+<div class="img">AULA</div>
+	<div class="container">
+		<div class="col-sm-6 autocenter">
+			<center>
+			<div class="card">
+			<div class="card-header"> SIGN UP
+			</div>
+			
+			<div class="card-body">
+				<form action="/signup" method="post" class="needs-validation" novalidate="">
+                    <div class="row">
+                        <div class="col">
+                          <label>Full Name: </label><input type="text" class="form-control" name="name" id="name"  placeholder="Enter Full Name" required>
+                         <div class="invalid-feedback">Please Fill This Field!</div>
+                         <br><label>New Password: </label><input class="form-control" type="password" name="password" id="password"  placeholder="Enter New Password" required>
+                         <div class="invalid-feedback">Please Fill This Field!</div>
+                         <br><label>Contact Number: </label><input class="form-control" type="number" name="contact" id="contact" placeholder="Contact Number" required>
+                            <div class="invalid-feedback">Please Fill This Field!</div>
+                        </div>
+                        <div class="col">
+                          <label>Email: </label><input class="form-control" type="email" name="email" id="email"  placeholder="Enter Email Address" required>
+                          <div class="invalid-feedback">Please Fill This Field!</div>
+                         <br> <label>Confirm Password: </label><input class="form-control" type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password" required>
+                            <div class="invalid-feedback">Please Fill This Field!</div>
+                          <br>  <label>Branch:</label>
+                                    <select size="1" style="overflow:scroll;" class="form-control" required name="branch"><option></option><option value="Andheri Office" name="andheri">Andheri Office</option><option value="Bandra Office" name="bandra">Bandra Office</option>
+                                    <option value="Bhayendar Office" name="bhayendar">Bhayender Office</option><option value="Borivali Office" name="borivali">Borivali Office</option>
+                                    <option value="Churchgate Office" name="churchgate">Churchgate Office</option> <option value="Dadar Office" name="dadar">Dadar Office</option>
+                                    <option value="Kalyan Office" name="kalyan">Kalyan Office</option><option value="Karjat Office" name="karjat">Karjat Office</option>
+                                    <option value="Mumbai Central Office" name="mumbaicentral">Mumbai Central Office</option><option value="Nerul Office" name="nerul">Nerul Office</option>
+                                    <option value="Panvel Office" name="panvel">Panvel Office</option><option value="Thane Office" name="thane">Thane Office</option>
+                                    <option value="Vashi Office" name="vashi">Vashi Office</option><option value="Virar Office" name="virar">Virar Office</option>
+                                    <option value="Wadala Office" name="wadala">Wadala Office</option></select>
+                                <div class="invalid-feedback">Please Fill This Field!</div>
+                        </div>
+                      </div>
+     <br> <button type="submit" class="btn btn-primary">Sign Up</button><br>
+  <br><p style="font-family: Rockwell; color: beige;">Already have an account? <a href="/login">Login</a></p>
+  </div>
+</form>
+			</center>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+</body>
+</html>

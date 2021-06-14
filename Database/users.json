@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "6070b60542b0252a99656a3e"
+  },
+  "email": "admin@gmail.com",
+  "password": "adminLec",
+  "cookieid": "1"
+},{
+  "_id": {
+    "$oid": "6071e27d5288333464086e75"
+  },
+  "name": "Tasneem Bharmal",
+  "email": "tasneem@ufaber.com",
+  "password": "Tas@1403",
+  "contact": "9820874123",
+  "branch": "Thane Office",
+  "cookieid": "0"
+},{
+  "_id": {
+    "$oid": "6072e0fc84d0a851a8777e8f"
+  },
+  "name": "Tasneem Methiwala",
+  "email": "tas.methiwala@gmail.com",
+  "password": "Tas@0406",
+  "contact": "9820112233",
+  "branch": "Andheri Office",
+  "cookieid": "0"
+},{
+  "_id": {
+    "$oid": "608445cabf51e63eb46428c4"
+  },
+  "name": "Abdeali Methiwala",
+  "email": "methiwala.abdeali@gmail.com",
+  "password": "abdeali",
+  "contact": "9323789654",
+  "branch": "Dadar Office",
+  "cookieid": "0"
+},{
+  "_id": {
+    "$oid": "608ec3e999f60c1c3cbd6cb2"
+  },
+  "name": "Tasneem Bharmal",
+  "email": "tasneemib@rediffmail.com",
+  "password": "tasneem",
+  "contact": "8796541301",
+  "branch": "Wadala Office",
+  "cookieid": "0"
+}]

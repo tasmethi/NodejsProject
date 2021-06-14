@@ -1,0 +1,211 @@
+[{
+  "_id": {
+    "$oid": "608545d1c70c39414c7616b2"
+  },
+  "studentname": "Insiya Bharmal",
+  "teachername": "Zahabiya Amreliwala",
+  "coursename": "HTML5,CSS & PHP",
+  "classdate": "2021-04-24",
+  "classstarttime": "14:00",
+  "classendtime": "15:00",
+  "chaptername": "HTML",
+  "topicscovered": "head,body,p,br,header tags",
+  "testtopics": "",
+  "marksobtained": "",
+  "classmanagerid": "6072e0fc84d0a851a8777e8f"
+},{
+  "_id": {
+    "$oid": "6085463ac70c39414c7616b3"
+  },
+  "studentname": "Hussain Bharmal",
+  "teachername": "Karthik Aryan",
+  "coursename": "AWS basics",
+  "classdate": "2021-04-23",
+  "classstarttime": "09:00",
+  "classendtime": "10:00",
+  "chaptername": "S3 Bucket",
+  "topicscovered": "create bucket and upload data",
+  "testtopics": "S3 creation",
+  "marksobtained": "12",
+  "classmanagerid": "6072e0fc84d0a851a8777e8f"
+},{
+  "_id": {
+    "$oid": "60854691c70c39414c7616b4"
+  },
+  "studentname": "Mufaddal Bharmal",
+  "teachername": "Hetali Shah",
+  "coursename": "Nodejs",
+  "classdate": "2021-04-24",
+  "classstarttime": "12:00",
+  "classendtime": "13:00",
+  "chaptername": "Web Server",
+  "topicscovered": "Creating simple Web server",
+  "testtopics": "Web Server",
+  "marksobtained": "15",
+  "classmanagerid": "6071e27d5288333464086e75"
+},{
+  "_id": {
+    "$oid": "608547c8c70c39414c7616b5"
+  },
+  "studentname": "Priyanka Khanna",
+  "teachername": "Alafeyah Bata",
+  "coursename": "Basic C++ and Java",
+  "classdate": "2021-04-22",
+  "classstarttime": "17:30",
+  "classendtime": "18:30",
+  "chaptername": "Java Loops",
+  "topicscovered": "For and While Loop",
+  "testtopics": "If condition",
+  "marksobtained": "14",
+  "classmanagerid": "6071e27d5288333464086e75"
+},{
+  "_id": {
+    "$oid": "6085480fc70c39414c7616b6"
+  },
+  "studentname": "Sakshi Taneja",
+  "teachername": "Deepti Dutta",
+  "coursename": "HTML5,CSS & PHP",
+  "classdate": "2021-04-19",
+  "classstarttime": "19:30",
+  "classendtime": "20:30",
+  "chaptername": "CSS introduction",
+  "topicscovered": "CSS id and class tags",
+  "testtopics": "HTML tags",
+  "marksobtained": "19",
+  "classmanagerid": "608445cabf51e63eb46428c4"
+},{
+  "_id": {
+    "$oid": "60854834c70c39414c7616b7"
+  },
+  "studentname": "Garima Gupta",
+  "teachername": "Neha Kumar",
+  "coursename": "MySql & MongoDB",
+  "classdate": "2021-04-15",
+  "classstarttime": "15:30",
+  "classendtime": "16:30",
+  "chaptername": "My SQL Queries",
+  "topicscovered": "Select and Insert Query",
+  "testtopics": "",
+  "marksobtained": "",
+  "classmanagerid": "608445cabf51e63eb46428c4"
+},{
+  "_id": {
+    "$oid": "608bd2f7c0410a54786bab6d"
+  },
+  "studentname": "Mufaddal Bharmal",
+  "teachername": "Alafeyah Bata",
+  "coursename": "HTML5,CSS & PHP",
+  "classdate": "2021-04-28",
+  "classstarttime": "12:00",
+  "classendtime": "13:00",
+  "chaptername": "CSS introduction",
+  "topicscovered": "CSS id and class tags",
+  "testtopics": "HTML tags",
+  "marksobtained": "17",
+  "classmanagerid": "6071e27d5288333464086e75"
+},{
+  "_id": {
+    "$oid": "608bd38dc0410a54786bab6e"
+  },
+  "studentname": "Priyanka Khanna",
+  "teachername": "Hetali Shah",
+  "coursename": "AWS basics",
+  "classdate": "2021-04-27",
+  "classstarttime": "15:00",
+  "classendtime": "16:00",
+  "chaptername": "S3 Bucket",
+  "topicscovered": "create and upload data",
+  "testtopics": "",
+  "marksobtained": "",
+  "classmanagerid": "6071e27d5288333464086e75"
+},{
+  "_id": {
+    "$oid": "608ec01699030050d43afd3c"
+  },
+  "studentname": "Priyanka Khanna",
+  "teachername": "Hetali Shah",
+  "coursename": "Basic C++ and Java",
+  "classdate": "2021-04-30",
+  "classstarttime": "14:00",
+  "classendtime": "15:00",
+  "chaptername": "abcd",
+  "topicscovered": "abcd",
+  "testtopics": "",
+  "marksobtained": "",
+  "classmanagerid": "6071e27d5288333464086e75"
+},{
+  "_id": {
+    "$oid": "608ed85999f60c1c3cbd6cb3"
+  },
+  "studentname": "Sakshi Taneja",
+  "teachername": "Deepti Dutta",
+  "coursename": "HTML5,CSS & PHP",
+  "classdate": "2021-05-03",
+  "classstarttime": "15:30",
+  "classendtime": "16:30",
+  "chaptername": "abcd",
+  "topicscovered": "abcd",
+  "testtopics": "",
+  "marksobtained": "",
+  "classmanagerid": "608445cabf51e63eb46428c4"
+},{
+  "_id": {
+    "$oid": "608ed9e40a5c9f413c941c1e"
+  },
+  "studentname": "Sakshi Taneja",
+  "teachername": "Neha Kumar",
+  "coursename": "Expressjs",
+  "classdate": "2021-05-02",
+  "classstarttime": "17:30",
+  "classendtime": "18:30",
+  "chaptername": "app server",
+  "topicscovered": "app.get and app.post",
+  "testtopics": "",
+  "marksobtained": "",
+  "classmanagerid": "608445cabf51e63eb46428c4"
+},{
+  "_id": {
+    "$oid": "609131641b1f4150cc45d7e9"
+  },
+  "studentname": "Namrata Tyagi",
+  "teachername": "Shashank Juvekar",
+  "coursename": "HTML5,CSS & PHP",
+  "classdate": "2021-05-03",
+  "classstarttime": "10:30",
+  "classendtime": "11:30",
+  "chaptername": "CSS introduction",
+  "topicscovered": "CSS id and class tags",
+  "testtopics": "HTML tags",
+  "marksobtained": "11",
+  "classmanagerid": "608ec3e999f60c1c3cbd6cb2"
+},{
+  "_id": {
+    "$oid": "609131981b1f4150cc45d7ea"
+  },
+  "studentname": "Namrata Tyagi",
+  "teachername": "Hardik Kohli",
+  "coursename": "MySql & MongoDB",
+  "classdate": "2021-05-04",
+  "classstarttime": "15:00",
+  "classendtime": "16:00",
+  "chaptername": "My SQL Queries",
+  "topicscovered": "Select and Insert Query",
+  "testtopics": "",
+  "marksobtained": "",
+  "classmanagerid": "608ec3e999f60c1c3cbd6cb2"
+},{
+  "_id": {
+    "$oid": "6096c984ed5e5d50c00c4ac1"
+  },
+  "studentname": "Hema Dutta",
+  "teachername": "Alafeyah Bata",
+  "coursename": "MySql & MongoDB",
+  "classdate": "2021-05-07",
+  "classstarttime": "18:30",
+  "classendtime": "19:30",
+  "chaptername": "My SQL Queries",
+  "topicscovered": "Select and Insert Query",
+  "testtopics": "",
+  "marksobtained": "",
+  "classmanagerid": "6071e27d5288333464086e75"
+}]

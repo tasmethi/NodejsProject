@@ -1,0 +1,145 @@
+[{
+  "_id": {
+    "$oid": "6085414d1e9b8448648865bc"
+  },
+  "name": "Zahabiya Amreliwala",
+  "email": "zahabreli@gmail.com",
+  "joiningdate": "2020-10-05",
+  "contact": "9780145236",
+  "branch": "Andheri Office",
+  "workhour": "9 hours",
+  "payment": "INR 400 per hour",
+  "profileimage": "public\\images\\profilepic-2021-05-09_1620540088253.jpg"
+},{
+  "_id": {
+    "$oid": "608541951e9b8448648865bd"
+  },
+  "name": "Karthik Aryan",
+  "email": "karyan@gmail.com",
+  "joiningdate": "2020-08-20",
+  "contact": "8793012546",
+  "branch": "Andheri Office",
+  "workhour": "7 hours",
+  "payment": "INR 200 per hour",
+  "profileimage": "public\\images\\profilepic-2021-05-09_1620541074227.jpg"
+},{
+  "_id": {
+    "$oid": "608542a41e9b8448648865be"
+  },
+  "name": "Neha Kumar",
+  "email": "neha.k@hotmail.com",
+  "joiningdate": "2020-10-30",
+  "contact": "7801236549",
+  "branch": "Dadar Office",
+  "workhour": "8 hours",
+  "payment": "INR 100 per hour",
+  "profileimage": "public\\images\\profilepic-2021-05-09_1620541501400.jpg"
+},{
+  "_id": {
+    "$oid": "608542e21e9b8448648865bf"
+  },
+  "name": "Deepti Dutta",
+  "email": "deeptidutta@gmail.com",
+  "joiningdate": "2021-01-01",
+  "contact": "7012664896",
+  "branch": "Dadar Office",
+  "workhour": "9 hours",
+  "payment": "INR 200 per hour",
+  "profileimage": "public\\images\\profilepic-2021-05-09_1620541522400.jpg"
+},{
+  "_id": {
+    "$oid": "608543361e9b8448648865c0"
+  },
+  "name": "Hetali Shah",
+  "email": "hetali.shah@outlook.com",
+  "joiningdate": "2020-11-16",
+  "contact": "9865471123",
+  "branch": "Thane Office",
+  "workhour": "6 hours",
+  "payment": "INR 500 per hour",
+  "profileimage": "public\\images\\profilepic-2021-05-09_1620540021634.jpg"
+},{
+  "_id": {
+    "$oid": "608543651e9b8448648865c1"
+  },
+  "name": "Alafeyah Bata",
+  "email": "alaf.b@gmail.com",
+  "joiningdate": "2020-12-07",
+  "contact": "9872100365",
+  "branch": "Thane Office",
+  "workhour": "8 hours",
+  "payment": "INR 500 per hour",
+  "profileimage": "public\\images\\profilepic-2021-05-09_1620539990837.jpg"
+},{
+  "_id": {
+    "$oid": "608edb860c02782040249bc2"
+  },
+  "name": "Shibani Dani",
+  "email": "shibani@gmail.com",
+  "joiningdate": "2020-11-01",
+  "contact": "8970213654",
+  "branch": "Dadar Office",
+  "workhour": "8 hours",
+  "payment": "INR 100 per hour",
+  "profileimage": "public\\images\\profilepic-2021-05-09_1620541544649.jpg"
+},{
+  "_id": {
+    "$oid": "6091275a3f14b14e200b34f1"
+  },
+  "name": "Sheetal Shah",
+  "email": "sheetal_shah@gmail.com",
+  "joiningdate": "2020-11-20",
+  "contact": "8521469730",
+  "branch": "Andheri Office",
+  "workhour": "7 hours",
+  "payment": "INR 300 per hour",
+  "profileimage": "public\\images\\profilepic-2021-05-09_1620541091634.jpg"
+},{
+  "_id": {
+    "$oid": "609130d41b1f4150cc45d7e7"
+  },
+  "name": "Hardik Kohli",
+  "email": "hardik.kohli@rediffmail.com",
+  "joiningdate": "2021-05-01",
+  "contact": "7011236594",
+  "branch": "Wadala Office",
+  "workhour": "6 hours",
+  "payment": "INR 300 per hour",
+  "profileimage": "public\\images\\profilepic-2021-05-09_1620541163329.jpg"
+},{
+  "_id": {
+    "$oid": "6091313f1b1f4150cc45d7e8"
+  },
+  "name": "Shashank Juvekar",
+  "email": "shashjuv@gmail.com",
+  "joiningdate": "2021-04-22",
+  "contact": "7541100236",
+  "branch": "Wadala Office",
+  "workhour": "4 hours",
+  "payment": "INR 400 per hour",
+  "profileimage": "public\\images\\profilepic-2021-05-09_1620541184038.jpg"
+},{
+  "_id": {
+    "$oid": "609776bbf1ab619de01149b8"
+  },
+  "name": "Jinesh Shah",
+  "email": "jinesh.shah@hotmail.com",
+  "joiningdate": "2021-01-30",
+  "contact": "9871105226",
+  "branch": "Dadar Office",
+  "workhour": "7 hours",
+  "payment": "INR 200 per hour",
+  "profileimage": "public\\images\\profilepic-2021-05-09_1620541608242.jpg"
+},{
+  "_id": {
+    "$oid": "60977a1d5b792051cc1efe07"
+  },
+  "name": "Jay Deskmukh",
+  "email": "Jayd123@gmail.com",
+  "joiningdate": "2021-03-24",
+  "contact": "7892210365",
+  "branch": "Thane Office",
+  "workhour": "7 hours",
+  "payment": "INR 300 per hour",
+  "profileimage": "public\\images\\profilepic-2021-05-09_1620539933032.jpg"
+}]

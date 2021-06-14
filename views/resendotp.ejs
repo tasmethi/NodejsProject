@@ -1,0 +1,12 @@
+var otp = Math.random();
+otp = otp * 1000000;
+otp = parseInt(otp);
+let otpobj;
+let mailer = require("nodemailer");
+let transporter = mailer.createTransport({
+	service:'gmail',
+	auth:{
+		user:'aulaclassrooms@gmail.com',
+		pass:'Aula@1234'
+	}
+});

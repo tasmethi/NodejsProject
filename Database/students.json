@@ -1,0 +1,109 @@
+[{
+  "_id": {
+    "$oid": "607d4cf9180bd292fcc6bc30"
+  },
+  "name": "Insiya Bharmal",
+  "email": "insipinsi@outlook.com",
+  "joiningdate": "2021-03-20",
+  "contact": "7891203654",
+  "branch": "Andheri Office"
+},{
+  "_id": {
+    "$oid": "608540641e9b8448648865b9"
+  },
+  "name": "Hussain Bharmal",
+  "email": "hussainjb@gmail.com",
+  "joiningdate": "2021-03-05",
+  "contact": "9011236548",
+  "branch": "Andheri Office"
+},{
+  "_id": {
+    "$oid": "608540801e9b8448648865ba"
+  },
+  "name": "Mufaddal Bharmal",
+  "email": "muffijb@hotmail.com",
+  "joiningdate": "2021-02-12",
+  "contact": "9870145236",
+  "branch": "Thane Office"
+},{
+  "_id": {
+    "$oid": "608540b71e9b8448648865bb"
+  },
+  "name": "Priyanka Khanna",
+  "email": "priya.k@rediff.com",
+  "joiningdate": "2020-12-20",
+  "contact": "8547963210",
+  "branch": "Thane Office"
+},{
+  "_id": {
+    "$oid": "608543a81e9b8448648865c2"
+  },
+  "name": "Sakshi Taneja",
+  "email": "sakshi.t@hotmail.com",
+  "joiningdate": "2021-03-15",
+  "contact": "9870014256",
+  "branch": "Dadar Office"
+},{
+  "_id": {
+    "$oid": "608543cc1e9b8448648865c3"
+  },
+  "name": "Garima Gupta",
+  "email": "garima.gupta@rediffmail.com",
+  "joiningdate": "2021-02-01",
+  "contact": "8712366549",
+  "branch": "Dadar Office"
+},{
+  "_id": {
+    "$oid": "609128dc3f14b14e200b34f2"
+  },
+  "name": "Taikhum Bharmal",
+  "email": "taikhum.bhar@gmail.com",
+  "joiningdate": "2021-03-14",
+  "contact": "8741236505",
+  "branch": "Andheri Office"
+},{
+  "_id": {
+    "$oid": "60912bc5f69bd822d0fc211f"
+  },
+  "name": "Aradhna Shinde",
+  "email": "aradhna.s@hotmail.com",
+  "joiningdate": "2021-02-25",
+  "contact": "9301445873",
+  "branch": "Andheri Office"
+},{
+  "_id": {
+    "$oid": "60912ff61b1f4150cc45d7e5"
+  },
+  "name": "Namrata Tyagi",
+  "email": "namutyagi@yahoo.in",
+  "joiningdate": "2021-04-30",
+  "contact": "9870122365",
+  "branch": "Wadala Office"
+},{
+  "_id": {
+    "$oid": "6091303d1b1f4150cc45d7e6"
+  },
+  "name": "Kavita Kishori",
+  "email": "kavki123@gmail.com",
+  "joiningdate": "2021-04-29",
+  "contact": "7011459966",
+  "branch": "Wadala Office"
+},{
+  "_id": {
+    "$oid": "60917cc62d027f41502fdb5d"
+  },
+  "name": "Harmeet Kaur",
+  "email": "harmeet.kaur@outlook.com",
+  "joiningdate": "2021-04-20",
+  "contact": "9012456887",
+  "branch": "Wadala Office"
+},{
+  "_id": {
+    "$oid": "6096c8a8ed5e5d50c00c4abf"
+  },
+  "name": "Hema Dutta",
+  "email": "hema.dutta@gmail.com",
+  "joiningdate": "2021-05-05",
+  "contact": "7458236901",
+  "branch": "Thane Office"
+}]

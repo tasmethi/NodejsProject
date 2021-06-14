@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Class Manager Portal
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+    <style>
+        a {
+        margin-left: 30px;
+        margin-right: 30px;
+        
+    }
+	body{
+	margin-top:50px;
+	background-color: rgb(202, 243, 216);
+}
+.card{
+  width:auto;
+	height:450px;
+	position:fixed;
+	top:170px;
+	left:370px;
+  overflow: scroll;
+  overflow-x: hidden;
+    background-color:rgb(25, 51, 53);
+}
+.card-header{
+    font-family: Rockwell;
+    color: beige;
+    font-size: 15px;
+}
+.autocenter{
+	float:none;
+	margin:auto;
+}
+button {
+    background-color:rgb(179, 214, 248);  ;
+    font-family: Rockwell;
+    color: beige;
+
+}
+label{
+  font-family: Rockwell;
+    color: beige;
+    font-size: 12px;
+}
+p{
+    font-family: Rockwell;
+    color: beige;
+    font-size: 10px;
+}
+ 
+.dropdown-toggle::after {
+   transition: transform 0.15s linear; 
+}
+ 
+.show.dropdown .dropdown-toggle::after {
+  transform: translateY(3px);
+}
+.dropdown-menu {
+  margin-top: 0;
+}
+.dropdown-item:hover{
+    background: none;
+}
+::-webkit-scrollbar {
+width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey; 
+border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: beige; 
+border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: gainsboro;
+}
+    </style>
+
+<body>
+    <%if(message!=""){%>
+        <%if(message=="Success"){%>
+        <div class="modal" id="successModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Success</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+          Teacher Details Updated Successfully!
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+        $("#successModal").modal();
+    </script>
+    <%}%>
+    <%if(message=="DateError"){%>
+      <div class="modal" id="dateerrorModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Error</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+        Entered date cannot be a future date!
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+      $("#dateerrorModal").modal();
+  </script>
+  <%}%>
+  <%if(message=="ImageError"){%>
+    <div class="modal" id="imageerrorModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Error</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+      Profile Image Is Empty!
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+    $("#imageerrorModal").modal();
+</script>
+<%}}%>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand">
+          <img src="icon1.png" alt="logo" style="width:100px;">
+        </a>
+        <!-- Links -->
+        <centre>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <a class="dropdown-item" href="/">Main Home Page</a>
+              <a class="dropdown-item" href="/cmportal">CM Portal</a>
+              <div class="dropdown-divider"></div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage Students
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <a class="dropdown-item" href="/newstudent">Add New Student</a>
+              <a class="dropdown-item" href="/viewstudents">View All Students</a>
+              <div class="dropdown-divider"></div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage Teachers
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <a class="dropdown-item" href="/newteacher">Add New Teacher</a>
+              <a class="dropdown-item" href="/viewteachers">View All Teachers</a>
+              <div class="dropdown-divider"></div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage Courses
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <a class="dropdown-item" href="/newcourse">Add New Course</a>
+              <a class="dropdown-item" href="/viewcourses">View All Courses</a>
+              <div class="dropdown-divider"></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/lecturedetails">Lecture Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>
+          </li>
+          
+        </ul>
+    </centre>
+      </nav>
+      <div class="container">
+		<div class="col-sm-6 autocenter">
+			<center>
+			<div class="card">
+			<div class="card-header"> TEACHER UPDATE FORM
+			</div>
+			
+			<div class="card-body">
+				<form action="/teachupdate" method="post" class="needs-validation" novalidate="" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col">
+                          <label>Full Name: </label><input type="text" class="form-control" name="name" id="name" value="<%=message.name%>" required>
+                         <div class="invalid-feedback">Please Fill This Field!</div>
+                         <br><label>Joining Date: </label><input class="form-control" type="date" name="jdate" id="jdate" value="<%=message.jdate%>" required>
+                         <div class="invalid-feedback">Please Fill This Field!</div>
+                         <br><label>Contact Number: </label><input class="form-control" type="number" name="contact" id="contact" value="<%=message.contact%>" required>
+                        <div class="invalid-feedback">Please Fill This Field!</div>
+                        <br><label>Working Hours:</label>
+                        <select size="1" style="overflow:scroll;" class="form-control" required name="workhour"><option value="<%=message.workhour%>" name="default"><%=message.workhour%></option><option value="3 hours" name="3hours">3 hours</option><option value="4 hours" name="4hours">4 hours</option>
+                        <option value="5 hours" name="5hours">5 hours</option><option value="6 hours" name="6hours">6 hours</option>
+                        <option value="7 hours" name="7hours">7 hours</option> <option value="8 hours" name="8hours">8 hours</option>
+                        <option value="9 hours" name="9hours">9 hours</option></select>
+                        <div class="invalid-feedback">Please Fill This Field!</div>
+                        </div>
+                        <div class="col">
+                          <label>Email: </label><input class="form-control" type="email" name="email" id="email"  value="<%=message.email%>" required>
+                          <div class="invalid-feedback">Please Fill This Field!</div>
+                          <br>  <label>Payment:</label>
+                                    <select size="1" style="overflow:scroll;" class="form-control" required name="payment"><option value="<%=message.payment%>" name="default"><%=message.payment%></option><option value="INR 100 per hour" name="inr100">INR 100 per hour</option><option value="INR 200 per hour" name="inr200">INR 200 per hour</option>
+                                    <option value="INR 300 per hour" name="inr300">INR 300 per hour</option><option value="INR 400 per hour" name="inr400">INR 400 per hour</option><option value="INR 500 per hour" name="inr500">INR 500 per hour</option></select>
+                          <br>  <label>Branch:</label>
+                                    <select size="1" style="overflow:scroll;" class="form-control" required name="branch"><option value="<%=message.branch%>" name="default"><%=message.branch%></option><option value="Andheri Office" name="andheri">Andheri Office</option><option value="Bandra Office" name="bandra">Bandra Office</option>
+                                    <option value="Bhayendar Office" name="bhayendar">Bhayender Office</option><option value="Borivali Office" name="borivali">Borivali Office</option>
+                                    <option value="Churchgate Office" name="churchgate">Churchgate Office</option> <option value="Dadar Office" name="dadar">Dadar Office</option>
+                                    <option value="Kalyan Office" name="kalyan">Kalyan Office</option><option value="Karjat Office" name="karjat">Karjat Office</option>
+                                    <option value="Mumbai Central Office" name="mumbaicentral">Mumbai Central Office</option><option value="Nerul Office" name="nerul">Nerul Office</option>
+                                    <option value="Panvel Office" name="panvel">Panvel Office</option><option value="Thane Office" name="thane">Thane Office</option>
+                                    <option value="Vashi Office" name="vashi">Vashi Office</option><option value="Virar Office" name="virar">Virar Office</option>
+                                    <option value="Wadala Office" name="wadala">Wadala Office</option></select>
+                                <div class="invalid-feedback">Please Fill This Field!</div>
+                                <br><label for="profilepic">Profile Image: </label><input style="color:beige" type="file" name="profilepic" id="profilepic" optional>
+                                <div class="invalid-feedback">Please Fill This Field!</div>
+                          
+                        </div>
+                      </div>
+                  <br>    <button type="submit" class="btn btn-primary">Submit</button>
+     
+  </div>
+</form>
+			</center>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+</body>
+</html>
