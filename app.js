@@ -8,7 +8,7 @@ let MongoClient = require("mongodb").MongoClient;
 let cookieParser = require("cookie-parser");
 let expressValidator = require("express-validator");
 let url=require("url");
-let urlobj = "mongodb://localhost:27017/";
+let urlobj = "mongodb+srv://portiontracker:portiontracker@cluster0.nzdgn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 let ObjectId=require("mongodb").ObjectId;
 let helpers = require('./helpers');
 let date = require('date-and-time');
@@ -1315,4 +1315,4 @@ app.get("/public/images/:image", function(req, res){
 app.get("/contactus",function(req,res){
 res.render("contactus",{});
 });
-server.listen(3000);
+server.listen(5000);
