@@ -8,7 +8,7 @@ let MongoClient = require("mongodb").MongoClient;
 let cookieParser = require("cookie-parser");
 let expressValidator = require("express-validator");
 let url=require("url");
-let urlobj = "mongodb+srv://portiontracker:portiontracker@cluster0.nzdgn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+let urlobj = "mongodb+srv://portiontracker:portiontracker@cluster0.nzdgn.mongodb.net/portiontracker?retryWrites=true&w=majority";
 let ObjectId=require("mongodb").ObjectId;
 let helpers = require('./helpers');
 let date = require('date-and-time');
